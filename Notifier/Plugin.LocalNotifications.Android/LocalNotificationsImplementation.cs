@@ -139,5 +139,10 @@ namespace Plugin.LocalNotifications
             var utcAlarmTimeInMillis = utcTime.AddSeconds(-epochDifference).Ticks / 10000;
             return utcAlarmTimeInMillis;
         }
+
+        public void Show(string title, string body, int id, DateTime notifyTime, int badgeNumber)
+        {
+            Show(title,body,id,notifyTime);
+        }
     }
 }

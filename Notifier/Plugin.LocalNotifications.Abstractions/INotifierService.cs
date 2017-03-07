@@ -24,6 +24,8 @@ namespace Plugin.LocalNotifications.Abstractions
         /// <param name="notifyTime">Time to show notification</param>
         void Show(string title, string body, int id, DateTime notifyTime);
 
+        void Show(string title, string body, int id, DateTime notifyTime,int badgeNumber);
+
         /// <summary>
         /// Cancel a local notification
         /// </summary>

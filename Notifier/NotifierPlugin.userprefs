@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{C1C9F027-61B2-4BBD-B5D2-7501198E8E87}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Plugin.LocalNotifications/CrossLocalNotifications.cs">
+    <Files>
+      <File FileName="Plugin.LocalNotifications/CrossLocalNotifications.cs" Line="1" Column="1" />
+      <File FileName="Plugin.LocalNotifications.Abstractions/INotifierService.cs" Line="27" Column="91" />
+      <File FileName="Plugin.LocalNotifications.Android/LocalNotificationsImplementation.cs" Line="139" Column="91" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/10.4.0.123/lib/msbuild/iOS/Xamarin.MonoTouch.CSharp.targets" Line="21" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NotifierPlugin" expanded="True">
+            <Node name="LocalNotifications" expanded="True">
+              <Node name="Plugin.LocalNotifications" selected="True" />
+              <Node name="Plugin.LocalNotifications.Abstractions" expanded="True" />
+              <Node name="Plugin.LocalNotifications.Android" expanded="True" />
+            </Node>
+            <Node name="NuGet" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TestApps.AndroidApp PreferredExecutionTarget="Android.G3AXGV971996ZZZ" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TestApps.iOSClassicApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E51AE158-6370-4055-8ADD-CFBC77F77EFD" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Plugin.LocalNotifications.WinRT/Plugin.LocalNotifications.WinRT.csproj</String>
+  </DisabledProjects>
+</Properties>

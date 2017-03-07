@@ -58,6 +58,27 @@ namespace Plugin.LocalNotifications
         }
 
         /// <summary>
+        /// Schedule a local notification in the Notification Center.
+        /// </summary>
+        /// <param name="title">Title of the notification</param>
+        /// <param name="body">Body or description of the notification</param>
+        /// <param name="id">Id of the notification</param>
+        /// <param name="notifyTime">The time you would like to schedule the notification for</param>
+        /// <param name="badgeNumber">BadgeNumber for iOS</param>
+        public void Show(string title, string body, int id, DateTime notifyTime, int badgeNumber)
+        {
+            var notification = new UILocalNotification {
+                FireDate = (NSDate)notifyTime,
+                AlertAction = title,
+                AlertBody = body,
+                UserInfo = NSDictionary.FromObjectAndKey(NSObject.FromObject(id), NSObject.FromObject(NotificationKey)),
+                ApplicationIconBadgeNumber = badgeNumber
+            };
+
+            UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+        }
+
+        /// <summary>
         /// Show a local toast notification.  Notification will also appear in the Notification Center on Windows Phone 8.1.
         /// </summary>
         /// <param name="id">Id of the scheduled notification you'd like to cancel</param>
